@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3D Visionary Lab</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <section class="banner fade-in">
+  <img src="images/banner.png" alt="3D Visionary Lab Banner">
+</section>
 
-  <!-- Navigation Bar -->
   <header>
-    <div class="logo">3D Visionary Lab</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">CAD Files</a>
-      <a href="#">Courses</a>
-      <a href="#">About</a>
-    </nav>
-  </header>
+  <img src="images/logo.png" alt="3D Visionary Lab Logo" class="logo">
+  <nav>
+    <a href="#designs">Designs</a>
+    <a href="#courses">Courses</a>
+    <a href="#lab">The Lab</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Imagine. Model. Manifest.</h1>
-    <p>Empowering creators with 3D models, CAD courses, and innovation tools.</p>
-    <div class="buttons">
-      <a href="#" class="btn">Explore CAD Files</a>
-      <a href="#" class="btn btn-outline">View Courses</a>
-    </div>
+
+  <section class="hero fade-in">
+    <h2>Expanding CAD Worldwide 🌍</h2>
+    <p>Explore creative CAD designs, learn through AI-powered courses, and join the future of 3D design.</p>
+    <button>Explore Now</button>
   </section>
 
-  <!-- Featured Section -->
-  <section class="features">
-    <h2>Explore Our Designs</h2>
+  <section id="designs" class="fade-in">
+    <h2>🌀 CAD & STL Files</h2>
     <div class="card-container">
       <div class="card">
-        <img src="https://placehold.co/300x200" alt="Fidget Model">
-        <h3>Infinity Cube STL</h3>
-        <p>A smooth-folding fidget cube design.</p>
-        <a href="#" class="btn-small">Download</a>
+        <img src="images/fidget-preview1.png" alt="Fidget Spinner">
+        <h3>Fidget Spinner</h3>
+        <p>Unique balanced spinner ready for print.</p>
+        <button>Download</button>
       </div>
-
       <div class="card">
-        <img src="https://placehold.co/300x200" alt="Ring Model">
-        <h3>Spinner Ring STL</h3>
-        <p>A sleek, print-in-place spinning ring.</p>
-        <a href="#" class="btn-small">Download</a>
-      </div>
-
-      <div class="card">
-        <img src="https://placehold.co/300x200" alt="Architecture Model">
-        <h3>Mini Pavilion STL</h3>
-        <p>A futuristic architecture-inspired model.</p>
-        <a href="#" class="btn-small">Download</a>
+        <img src="images/gear.png" alt="Gear STL">
+        <h3>Mechanical Gear</h3>
+        <p>Precise industrial gear model.</p>
+        <button>Download</button>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 3D Visionary Lab. All Rights Reserved.</p>
-    <div class="socials">
-      <a href="#">TikTok</a>
-      <a href="#">Instagram</a>
-      <a href="#">YouTube</a>
+  <section id="designs" class="fade-in">
+  <h2>🌀 CAD & STL Files</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="images/fidget1.png" alt="Fidget Spinner">
+      <h3>Fidget Spinner</h3>
+      <p>Unique balanced spinner ready for print.</p>
+      <button>Download STL</button>
     </div>
+
+    <div class="card">
+      <img src="images/gearfidget.png" alt="Gear Fidget">
+      <h3>Gear Fidget</h3>
+      <p>Compact moving gear set for stress relief.</p>
+      <button>Download STL</button>
+    </div>
+
+    <div class="card">
+      <img src="images/gadget1.png" alt="Gadget Design">
+      <h3>Mini Desk Gadget</h3>
+      <p>Perfect for decoration and fidgeting.</p>
+      <button>Download STL</button>
+    </div>
+  </div>
+</section>
+
+
+  <section id="courses" class="fade-in">
+    <h2>📘 Learn CAD with AI</h2>
+    <p>Master Autodesk Inventor, Fusion 360, and Revit using AI manuals and tutorials.</p>
+    <button>View Courses</button>
+  </section>
+
+  <section id="lab" class="fade-in">
+    <h2>🔬 The Lab (Coming Soon)</h2>
+    <p>A creative environment where anyone can design CAD models directly online or through our future app.</p>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 3D Visionary Lab | Made by Malikah Traore</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>

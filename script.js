@@ -1,20 +1,16 @@
-// 3D Visionary Lab - Interactivity Script
 console.log("🚀 Welcome to 3D Visionary Lab!");
 
-// 🌈 Neon glow animation for buttons
+// Neon glow for buttons
 document.querySelectorAll("button").forEach(btn => {
   btn.addEventListener("mouseover", () => {
     btn.style.boxShadow = "0 0 25px #0ff, 0 0 50px #f0f";
-    btn.style.transform = "scale(1.1)";
   });
-
   btn.addEventListener("mouseout", () => {
     btn.style.boxShadow = "none";
-    btn.style.transform = "scale(1)";
   });
 });
 
-// 🌟 Smooth scroll for navigation links
+// Smooth scroll for nav
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -25,17 +21,13 @@ document.querySelectorAll("nav a").forEach(link => {
   });
 });
 
-// ✨ Floating glow effect on cards
-const cards = document.querySelectorAll(".card");
-cards.forEach(card => {
-  card.addEventListener("mousemove", e => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    card.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(0,255,255,0.3), #111)`;
-  });
-
-  card.addEventListener("mouseleave", () => {
-    card.style.background = "#111";
+// Fade-in on scroll
+const fadeEls = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
   });
 });
+fadeEls.forEach(el => observer.observe(el));
